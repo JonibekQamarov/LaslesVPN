@@ -1,0 +1,110 @@
+.global-section {
+  padding-top: 150px;
+  transition: padding 0.5s ease;
+
+  @media only screen and (max-width: $tablet-l) {
+    padding-top: 120px;
+  }
+
+  @media only screen and (max-width: $tablet) {
+    padding-top: 100px;
+  }
+
+  @media only screen and (max-width: $mobile) {
+    padding-top: 70px;
+  }
+
+  &__wrapper {
+    &-top {
+      text-align: center;
+      margin-bottom: 135px;
+      transition: margin 0.5s ease;
+
+      @media only screen and (max-width: $tablet-l) {
+        margin-bottom: 110px;
+      }
+
+      @media only screen and (max-width: $tablet) {
+        margin-bottom: 80px;
+      }
+
+      @media only screen and (max-width: $mobile) {
+        margin-bottom: 60px;
+      }
+    }
+
+    &-middle {
+      margin-bottom: 30px;
+      transition: margin 0.5s ease;
+
+      @media only screen and (max-width: $tablet) {
+        margin-bottom: 20px;
+      }
+
+      @media only screen and (max-width: $mobile) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  &__title {
+    font-size: 35px;
+    margin: 0 auto;
+    max-width: 383px;
+    margin-bottom: 20px;
+    transition: font-size 0.5s ease;
+
+    @media only screen and (max-width: $tablet-l) {
+      font-size: 28px;
+    }
+
+    @media only screen and (max-width: $tablet) {
+      font-size: 24px;
+    }
+
+    @media only screen and (max-width: $mobile) {
+      font-size: 22px;
+    }
+  }
+
+  &__description {
+    max-width: 555px;
+    margin: 0 auto;
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    transition: gap 0.5s ease;
+
+    @media only screen and (max-width: $tablet-l) {
+      gap: 20px;
+    }
+
+    @media only screen and (max-width: $tablet) {
+      gap: 10px;
+    }
+  }
+
+  &__logo {
+    transition: width 0.5s ease;
+    cursor: pointer;
+
+    @media only screen and (max-width: $tablet) {
+      width: 150px;
+    }
+
+    @media only screen and (max-width: $mobile) {
+      width: 130px;
+    }
+  }
+}
